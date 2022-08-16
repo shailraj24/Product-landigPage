@@ -15,4 +15,4 @@ it's take near about 2 Hour to complete.
 
 ## Deployed link
 
-[Product Home Page](home-plant.netlify.app)
+[Product Home Page](https://product-landing-pagee.netlify.app/)
