@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Poppins";
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+.nav-item{
+    display: inline-block;
+    align-items: center;
+    margin-right: 1.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.active-item{
+    color: orangered;
+}
+.intro-section{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+}
+.left-section{
+    flex-grow: 1;
+    width: 50%;
+}
+.right-section{
+    flex-grow: 1;
+    position: relative;
+}
+h3{
+    font-size: 3rem;
+    align-items: center;
+    font-weight: 100;
+}
+h3 img{
+    margin-left: 1rem;
+    margin-top: 2rem;
+    width: 50px;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 1500;
+}
+.sub-headlines{
+    font-size: 2rem;
+    font-weight: 50;
+    line-height: 1.5;
+    margin: 2rem 0;
+    margin-left: 4rem;
+    align-self: center;
+}
+.sub-headlines img{
+    background-color: orangered;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    align-self: center;
+}
+p.text{
+    color: gray;
+    width: 80%;
+    font-size: 1.2rem;
+}
+.action-btns{
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin: 2rem 0;
+    margin-top: 4rem;
+}
+.action-btn{
+    color: white;
+    background-color: orangered;
+    font-size: 2rem;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.2rem;
+    margin-left: 2rem;
+}
+
+.discount{
+    position: absolute;
+    width: 150px;
+    top: 46%;
+    left: -55%;
+    z-index: 0;
+}
+.headphone{
+    position: absolute;
+    width: 450px;
+    top: 0;
+    left: -40%;
+    z-index: -1;
+}
+.discount-content{
+    position: absolute;
+    color: white;
+    z-index: 1;
+    top: 53%;
+    left: -48%;
+    text-align: center;
+}
+.discount-content h1{
+    font-size: 45px;
+}
+
+.discount-content h4{
+    margin-left: 0rem;
+    
+}
+
+.dots{
+    position: absolute;
+    bottom: 17%;
+    left: -7%;
+    display: flex;
+}
+.yellow-dot{
+    background-color: yellow;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.tomato-dot{
+    background-color: tomato;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+.black-dot{
+    background-color: black;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 4rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.bottom-btn{
+    position: absolute;
+    bottom: 6%;
+    left: -20%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1060px){
+    .right-section{
+        display: none;
+    }
+    nav img{
+        display: none;
+    }
+}
+@media screen and (max-width: 670px) {
+    body{
+        background-color: rgb(117, 117, 117);
+    }
+    h1{
+        font-size: 3rem;
+        font-weight: 800;
+    }
+    h3{
+        font-size: 2rem;
+        align-items: center;
+        font-weight: 100;
+    }
+    h3 img{
+        margin-left: 1rem;
+        margin-top: 2rem;
+        width: 30px;
+    }
+    .action-btn{
+        color: white;
+        background-color: orangered;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 1.5rem;
+        padding: 0.5rem 1.2rem;
+        margin-left: 2rem;
+    }
+    .nav-item{
+        font-size: 1.5rem;
+    }
+    p.text{
+        color: black;
+    }
+}
